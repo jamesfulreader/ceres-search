@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/jamesfulreader/ceres-search/search"
 	"github.com/jamesfulreader/ceres-search/utils"
 )
 
@@ -16,5 +17,10 @@ func main() {
 		fmt.Println(err)
 	}
 
-	fmt.Println(runeArray)
+	xmasCount, err := search.WordSearch(runeArray)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println(xmasCount)
 }
