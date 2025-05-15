@@ -9,8 +9,8 @@ import (
 
 func main() {
 	fmt.Println("Ceres Search")
-	// inputFile := "./input.txt"
-	inputFile := "./sampleInput.txt"
+	inputFile := "./input.txt"
+	// inputFile := "./sampleInput.txt"
 
 	runeArray, err := utils.ReadFile(inputFile)
 	if err != nil {

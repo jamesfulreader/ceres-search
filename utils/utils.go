@@ -33,10 +33,10 @@ func ReadFile(filePath string) ([][]rune, error) {
 		}
 	}
 
-	fmt.Println("Loaded Array:")
-	for _, row := range runeArray {
-		fmt.Println(row)
-	}
+	// fmt.Println("Loaded Array:")
+	// for _, row := range runeArray {
+	// 	fmt.Println(row)
+	// }
 
 	return runeArray, nil
 }
