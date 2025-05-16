@@ -17,7 +17,7 @@ The original problem can be found here:
 The solution is implemented in Go and follows a modular structure:
 
 *   `main.go`: The main entry point of the program. It orchestrates reading the input and calling the search logic for both parts of the puzzle.
-*   `reader/`: Contains code responsible for reading the input file (`input.txt`) and parsing it into a suitable 2D grid data structure (`[][]rune`).
+*   `utils/`: Contains code responsible for reading the input file (`input.txt`) and parsing it into a suitable 2D grid data structure (`[][]rune`).
 *   `search/`: Contains the core logic for finding the patterns for both Part 1 and Part 2.
     *   **Part 1:** Implements a systematic traversal of the grid, checking every cell as a potential starting point. From each starting point, it checks in all 8 cardinal and diagonal directions for the linear "XMAS" sequence. A helper function assists in checking along a specific direction while respecting grid boundaries.
     *   **Part 2:** Implements a search for the 'A' character which serves as the center of the 3x3 X-MAS pattern. It iterates through possible center positions (excluding border cells) and, for each potential center, checks the characters at the fixed relative positions forming the diagonal 'X' shape, verifying the "MAS" or "SAM" sequences along each diagonal.
